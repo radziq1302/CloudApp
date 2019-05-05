@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CloudApp</string>
+    <string name="hej">Helloł</string>
+    <string name="logout">Wyloguj</string>
+</resources>
