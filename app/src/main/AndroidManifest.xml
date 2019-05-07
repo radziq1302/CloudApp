@@ -16,17 +16,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AddDataActivity"></activity>
 
         <service android:name="org.eclipse.paho.android.service.MqttService" />
 
-        <activity android:name=".MainActivity">
-            android:label="@string/cloud_app">
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/cloud_app"></activity>
         <activity
             android:name=".AuthenticationActivity"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
