@@ -34,8 +34,16 @@ public class AuthenticationActivity extends AppCompatActivity {
 
                     switch (userStateDetails.getUserState()) {
                         case SIGNED_IN:
-                            Intent i = new Intent(AuthenticationActivity.this, MainActivity.class);
-                            startActivity(i);
+
+                            // tutaj trzeba sprawdzac czy uzytkownik istnieje
+                            if(true){
+                                Intent i = new Intent(AuthenticationActivity.this, GetUserDataActivity.class);
+                                startActivity(i);
+                            } else{
+                                Intent i = new Intent(AuthenticationActivity.this, MainActivity.class);
+                                startActivity(i);
+                            }
+
 
                             break;
                         case SIGNED_OUT:
@@ -59,7 +67,7 @@ public class AuthenticationActivity extends AppCompatActivity {
     private void showSignIn() {
         try {
             AWSMobileClient.getInstance().showSignIn(this,
-                    SignInUIOptions.builder().nextActivity(MainActivity.class).build());
+                    SignInUIOptions.builder().nextActivity(GetUserDataActivity.class).build());
         } catch (Exception e) {
             Log.e(TAG, e.toString());
         }

@@ -3,4 +3,25 @@
     <string name="hej">Helloł</string>
     <string name="logout">Wyloguj</string>
     <string name="cloud_app">main_activity</string>
+    <string name="title_activity_get_user_data">Dane o użytkowniku</string>
+
+
+
+    <string name="activities">Aktywność</string>
+
+    <string-array name="activities_arrays">
+        <item>Niska (raz w miesiącu)</item>
+        <item>Średnia (raz w tygodniu) </item>
+        <item>Wysoka (5 razy w tygodniu)</item>
+    </string-array>
+
+
+    <string name="genders">Płeć</string>
+
+    <string-array name="gender_arrays">
+        <item>Kobieta</item>
+        <item>Mężczyzna</item>
+        <item>Wolę nie podawać</item>
+    </string-array>
+
 </resources>

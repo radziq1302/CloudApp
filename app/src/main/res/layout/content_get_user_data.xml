@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GetUserDataActivity"
+    tools:showIn="@layout/activity_get_user_data"/>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:gravity="center"
+    android:paddingRight="16dp" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/first"
+        android:layout_width="378dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/first"
+            android:layout_alignParentLeft="true"
+            android:padding="30px"
+            android:text="Wzrost" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="wpisz wzrost w cm" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/second"
+        android:layout_width="395dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/first"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/second"
+            android:layout_alignParentLeft="true"
+            android:padding="30px"
+            android:text="Waga" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="wpisz wagę w kg" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/third"
+        android:layout_width="395dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/second"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/third"
+            android:layout_alignParentLeft="true"
+            android:padding="30px"
+            android:text="Wiek" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="wpisz wiek" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fourth"
+        android:layout_width="395dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/third"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/fourth"
+            android:layout_alignParentLeft="true"
+            android:padding="30px"
+            android:text="Płeć" />
+
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender_arrays"
+            android:prompt="@string/genders" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fifth"
+        android:layout_width="395dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/fourth"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/fifth"
+            android:layout_alignParentLeft="true"
+            android:padding="30px"
+            android:text="Aktywność" />
+
+
+        <Spinner
+            android:id="@+id/activity_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/activities_arrays"
+            android:prompt="@string/activities" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fifth"
+        android:layout_marginTop="48dp"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Wyślij" />
+
+
+
+
+
+
+</RelativeLayout>
+<!--tools:context=".GetUserDataActivity"
+tools:showIn="@layout/activity_get_user_data"/>-->
+
+
+
+
+
