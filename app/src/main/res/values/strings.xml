@@ -1,11 +1,7 @@
 <resources>
-    <string name="app_name">CloudApp</string>
-    <string name="hej">Helloł</string>
-    <string name="logout">Wyloguj</string>
-    <string name="cloud_app">main_activity</string>
-    <string name="title_activity_get_user_data">Dane o użytkowniku</string>
-
-
+    <string name="app_name">Cognito log in app</string>
+    <string name="title_activity_display">RegisterActivity</string>
+    <string name="title_activity_get_user_data">GetUserDataActivity</string>
 
     <string name="activities">Aktywność</string>
 
@@ -23,5 +19,6 @@
         <item>Mężczyzna</item>
         <item>Wolę nie podawać</item>
     </string-array>
+    <string name="title_activity_main_view">MainViewActivity</string>
 
 </resources>
